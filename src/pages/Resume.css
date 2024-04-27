@@ -1,0 +1,57 @@
+.resume {
+    padding: 20px;
+}
+  
+.section {
+    margin-bottom: 10px;
+    text-align: left; /* Align content to the left */
+    padding-left: 30px; /* Change left padding to 30px */
+}
+  
+.section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 0px;
+}
+  
+.section p {
+    margin-bottom: 5px;
+}
+  
+.section ul {
+    list-style: none;
+    padding-left: 5px; /* Reset padding */
+}
+  
+.section ul li {
+    position: relative;
+    padding-left: 15px; /* Reset padding */
+}
+  
+.section ul li::before {
+    content: '\2022';
+    position: absolute;
+    left: 0;
+    color: #007bff; /* Bullet color */
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+  }
+  
+.item {
+    margin-bottom: 0;
+    padding: 0;
+}
+  
+.item h4 {
+    font-size: 18px;
+    margin-bottom: 0;
+    padding: 0;
+}
+  
+.item p {
+    margin-bottom: 0;
+    padding: 0;
+}
