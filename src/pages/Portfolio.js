@@ -42,7 +42,7 @@ const Portfolio = () => {
 
                 const response = await axios.get(`https://api.github.com/repos/BhargavBanoth7/${selectedItem}/contents/README.md`, {
                     headers: {
-                        Accept: 'application/vnd.github.v3.html',
+                        Accept: 'application/vnd.github.v3.raw',
                         Cookie: config.cookie,
                         Authorization: `Basic ${btoa(`${config.username}:${config.password}`)}`,
                     }
