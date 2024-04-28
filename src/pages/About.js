@@ -2,6 +2,7 @@ import React from "react";
 import "../styles.css";
 import backgroundImage from "../images/bgd.jpg"
 
+// css styling for about page
 const containerStyle = {
   position: 'relative',
   minHeight: '100vh',
@@ -23,7 +24,7 @@ const contentStyle = {
   padding: '150px',
 };
 
-
+// About() returns the page content on /about
 function About() {
   return (
     <div className="About" style={containerStyle}>
