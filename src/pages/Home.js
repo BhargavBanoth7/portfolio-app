@@ -3,6 +3,7 @@ import "../styles.css";
 import dp from "../images/bhargav.jpg"
 import backgroundImage from "../images/trading_bgd.png"
 
+// page styling for layout of resume page
 const containerStyle = {
   position: 'relative',
   minHeight: '100vh',
@@ -24,6 +25,7 @@ const contentStyle = {
   padding: '150px',
 };
 
+// Home() returns the page content on /home
 function Home() {
   return (
     <div className="Home" style={containerStyle}>
