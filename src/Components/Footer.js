@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Adding Footer for the application 
 function Footer() {
   return (
     <footer>
