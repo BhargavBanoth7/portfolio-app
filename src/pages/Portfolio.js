@@ -25,6 +25,7 @@ const contentStyle = {
   zIndex: 1,
 };
 
+// Portfolio() returns the page content on /portfolio
 const Portfolio = () => {
     const [selectedItem, setSelectedItem] = useState('');
     const [apiData, setApiData] = useState(null);
@@ -39,7 +40,8 @@ const Portfolio = () => {
             try {
                 // Parse the YAML content
                 const config = yaml.load(yamlContent);
-
+                
+                // Fetching data from GitHub APIs
                 const response = await axios.get(`https://api.github.com/repos/BhargavBanoth7/${selectedItem}/contents/README.md`, {
                     headers: {
                         Accept: 'application/vnd.github.v3.raw',
@@ -47,6 +49,7 @@ const Portfolio = () => {
                         Authorization: `Basic ${btoa(`${config.username}:${config.password}`)}`,
                     }
                 });
+                // Saving the response data
                 setApiData(response.data);
             } catch (error) {
             setError(error.message);
