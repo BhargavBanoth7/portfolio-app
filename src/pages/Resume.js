@@ -2,6 +2,7 @@ import React from "react";
 import './Resume.css';
 import backgroundImage from "../images/trading_bgd.png"
 
+// page styling for layout of resume page
 const containerStyle = {
   position: 'relative',
   minHeight: '100vh',
@@ -22,6 +23,7 @@ const contentStyle = {
   zIndex: 1,
 };
 
+// Resume() returns the page content on /resume
 function Resume() {
   return (
   <div className="resume" style={containerStyle}>
